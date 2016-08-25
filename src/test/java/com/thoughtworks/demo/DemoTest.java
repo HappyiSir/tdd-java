@@ -9,7 +9,7 @@ public class DemoTest {
 
   @Test
   public void this_is_a_demo() {
-    assertThat(1 + 2, is(3));
+    assertThat(new Demo().add(1, 2), is(3));
   }
 
 }
