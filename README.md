@@ -1,4 +1,4 @@
-# TDD training in Java
+# TDD training in Java [![Build Status](https://travis-ci.org/automation-test-training/tdd-java.svg?branch=master)](https://travis-ci.org/automation-test-training/tdd-java)
 
 ## Run tests
 
