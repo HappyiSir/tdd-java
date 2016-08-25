@@ -20,7 +20,7 @@ $ gradle check
 
 ### More Puzzles
 
-* (Coding Dojo)[http://codingdojo.org/]
+* [Coding Dojo](http://codingdojo.org/)
 
 ## Resources
 
