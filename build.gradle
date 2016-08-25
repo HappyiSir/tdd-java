@@ -1,0 +1,39 @@
+group 'com.thoughtworks'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin: 'jacoco'
+
+repositories {
+  mavenCentral()
+  jcenter()
+}
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+dependencies {
+  compile 'com.google.guava:guava:19.0',
+      'com.google.code.gson:gson:2.+',
+      'joda-time:joda-time:2.+',
+      'com.google.code.findbugs:jsr305:3.0.1'
+  testCompile 'junit:junit:4.+',
+      'org.mockito:mockito-core:2.+'
+}
+
+jacoco {
+  toolVersion = "0.7.7.201606060606"
+}
+
+jacocoTestReport {
+  reports {
+    xml.enabled true
+    html.enabled = true
+  }
+}
+
+check.dependsOn jacocoTestReport
+
+task wrapper(type: Wrapper) {
+  gradleVersion = '2.14'
+}
