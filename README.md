@@ -24,6 +24,8 @@ $ gradle check
 
 ## Resources
 
+resources文件夹下有一些资源
+
 ### About Learning
 
 * [IDE IntelliJ](https://www.jetbrains.com/idea/download/)
